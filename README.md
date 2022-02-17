@@ -4,7 +4,6 @@
 [Зарплата.ру](http://zarplata.ru/) в ваш продукт.
 
 Для начала ознакомьтесь с [общей информацией](docs/general.md) по работе API,
-[часто задаваемыми вопросами](docs/FAQ.md) и
 
 Зарегистрированное приложение может запрашивать у пользователей zarplata.ru
 разрешение доступа к их персональным данным, без получения и хранения их
@@ -70,7 +69,7 @@
   * [Обновление сохраненного поиска резюме](docs/resumes_saved_searches.md#resumes-saved-search-update) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
   * [Удаление сохраненного поиска резюме](docs/resumes_saved_searches.md#resumes-saved-search-delete) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
   * [Передача сохраненного поиска резюме другому менеджеру](docs/resumes_saved_searches.md#resumes-saved-search-move-to-other-manager) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
-* [Просмотр резюме](docs/resumes.md#item) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
+* [Просмотр резюме](docs/employer_resumes.md) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
 * [История откликов/приглашений по резюме](docs/resume_negotiations_history.md) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
 
 <a name="vacancies"></a>
@@ -192,5 +191,3 @@
 За новостями вы можете следить по
 [коммитам](https://github.com/zarplata/api/commits/master) в этом репозитории.
 [RSS](https://github.com/zarplata/api/commits/master.atom).
-
-Часто задаваемые вопросы собраны в [FAQ](docs/FAQ.md).

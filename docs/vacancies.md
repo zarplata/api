@@ -86,7 +86,7 @@
     "code": "HRR-3487",
     "department": {
         "id": "ZARPLATA-1455-TECH",
-        "name": "zarplata::Технический департамент"
+        "name": "Зарплата.ру::Технический департамент"
     },
     "employment": {
         "id": "full",
@@ -117,7 +117,7 @@
             "240": "https://hr.zarplata.ru/employer-logo/289169.png",
             "original": "https://hr.zarplata.ru/file/2352807.png"
         },
-        "name": "zarplata",
+        "name": "Зарплата.ру",
         "url": "https://api.zarplata.ru/employers/1455",
         "alternate_url": "https://hr.zarplata.ru/employer/1455",
         "id": "1455",
@@ -262,7 +262,7 @@ type | object | Тип вакансии. Элемент справочника [
 type.id | string | Идентификатор типа вакансии
 type.name | string | Название типа вакансии
 has_test | boolean | Информация о наличии прикрепленного тестового задании к вакансии. В случае присутствия теста - `true`.
-response_url | string или null | На вакансии с типом `direct` нельзя откликнуться на сайте zarplata.ru, у этих вакансий в ключе `response_url` выдаётся URL внешнего сайта (чаще всего это сайт работодателя с формой отклика).
+response_url | string или null | На вакансии с типом `direct` нельзя откликнуться на сайте hr.zarplata.ru, у этих вакансий в ключе `response_url` выдаётся URL внешнего сайта (чаще всего это сайт работодателя с формой отклика).
 test | object или null | Информация о прикрепленном тестовом задании к вакансии. В случае отсутствия теста — `null`. **В данный момент отклик на вакансии с обязательным тестом через API невозможен.**
 test.required | boolean | Обязательно ли заполнение теста для отклика
 specialization | array | Специализации. Элементы справочника [specializations](specializations.md)
@@ -355,6 +355,7 @@ url | string | адрес страницы, содержащей интервь�
 id | string | Идентификатор профессиональной роли
 name | string | Название профессиональной роли
 
+<a name="author"></a>
 #### Дополнительные поля вакансии для работодателей
 
 В случае с запросом вакансии с авторизацией автора (работодателя), в объекте
@@ -415,7 +416,8 @@ can_upgrade_billing_type | логический | Можно ли улучшит
         "responses": 5,
         "unread_responses": 3,
         "resumes_in_progress": 5,
-        "invitations": 10
+        "invitations": 10,
+        "invitations_and_responses": 14
     }
 }
 ```
@@ -427,6 +429,7 @@ counters.responses | number | количество откликов на вак�
 counters.unread_responses | number | количество непросмотренных откликов на вакансию
 counters.resumes_in_progress | number | количество резюме в работе на вакансию
 counters.invitations | number | количество приглашений на вакансию
+counters.invitations_and_responses | number | количество откликнувшихся и приглашенных соискателей на вакансию
 
 ### Ошибки
 
@@ -437,7 +440,7 @@ counters.invitations | number | количество приглашений на
 
 HTTP code | type | value | описание
 ----------|------|-------|-----------
-403 | captcha_required | captcha_required | [Подробнее о капче](errors_additional.md#captcha_required)
+403 | captcha_required | captcha_required | [Подробнее о капче](errors.md#captcha_required)
 
 <a name="search"></a>
 ## Поиск по вакансиям
@@ -571,7 +574,7 @@ HTTP code | type | value | описание
    Возможно указание нескольких значений.  
   
 * `professional_role` — профессиональная роль. Необходимо передавать `id` из справочника
-  [professional_roles](professional_roles.md).
+  [professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Spravochniki/paths/~1professional_roles/get).
   Возможно указание нескольких значений. Замена специализациям (параметр `specialization`)
 
 <a name="search-results"></a>
@@ -613,7 +616,7 @@ HTTP code | type | value | описание
           "240": "https://hr.zarplata.ru/employer-logo/289169.png",
           "original": "https://hr.zarplata.ru/file/2352807.png"
         },
-        "name": "zarplata",
+        "name": "Зарплата.ру",
         "url": "https://api.zarplata.ru/employers/1455",
         "alternate_url": "https://hr.zarplata.ru/employer/1455",
         "id": "1455",
@@ -655,7 +658,7 @@ HTTP code | type | value | описание
       "apply_alternate_url": "https://hr.zarplata.ru/applicant/vacancy_response?vacancyId=8331228",
       "department": {
         "id": "ZARPLATA-1455-TECH",
-        "name": "zarplata::Технический департамент"
+        "name": "Зарплата.ру::Технический департамент"
       },
       "type": {
         "id": "open",
@@ -709,7 +712,7 @@ counters.responses | number | Количество откликов на вак�
 
 HTTP code | type | value | описание
 ----------|------|-------|-----------
-403 | captcha_required | captcha_required | [Подробнее о капче](errors_additional.md#captcha_required)
+403 | captcha_required | captcha_required | [Подробнее о капче](errors.md#captcha_required)
 
 <a name="similar"></a>
 ## Поиск по вакансиям, похожим на вакансию
@@ -745,7 +748,7 @@ HTTP code | type | value | описание
     "apply_alternate_url": "https://hr.zarplata.ru/applicant/vacancy_response?vacancyId=7760476",
     "department": {
         "id": "ZARPLATA-1455-TECH",
-        "name": "zarplata::Технический департамент"
+        "name": "Зарплата.ру::Технический департамент"
     },
     "salary": {
         "to": null,
@@ -774,7 +777,7 @@ HTTP code | type | value | описание
             "240": "https://hr.zarplata.ru/employer-logo/289169.png",
             "original": "https://hr.zarplata.ru/file/2352807.png"
         },
-        "name": "zarplata",
+        "name": "Зарплата.ру",
         "id": "1455"
     },
     "response_letter_required": false,
