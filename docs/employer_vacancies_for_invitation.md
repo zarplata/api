@@ -113,7 +113,7 @@
                     "240": "https://hr.zarplata.ru/employer-logo/1455.png",
                     "original": "https://hr.zarplata.ru/file/1455.png"
                 },
-                "name": "zarplata",
+                "name": "Зарплата.ру",
                 "id": "1455"
             },
             "response_letter_required": false,
