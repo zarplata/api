@@ -41,7 +41,7 @@
     "items": [
         {
             "id": "1455",
-            "name": "zarplata",
+            "name": "Зарплата.ру",
             "url": "https://api.zarplata.ru/employers/1455",
             "alternate_url": "https://hr.zarplata.ru/employer/1455",
             "vacancies_url": "https://api.zarplata.ru/vacancies?employer_id=1455",
@@ -93,7 +93,7 @@
 
 ```json
 {
-    "name": "zarplata",
+    "name": "Зарплата.ру",
     "type": "company",
     "id": "1455",
     "site_url": "https://hr.zarplata.ru",

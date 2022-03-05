@@ -208,7 +208,7 @@ HTTP code | type | value | описание
 403 | oauth | token_expired | время жизни access_token завершилось, необходимо [выполнить обновление access_token](authorization.md#refresh_token)
 403 | oauth | token_revoked | токен отозван пользователем, необходимо [запросить новую авторизацию](authorization.md)
 403 | oauth | application_not_found | ваше приложение было удалено
-
+403 | oauth | user_auth_expected | выполняется запрос с авторизацией приложения, для выполнения которого необходима [авторизация пользователя](authorization_for_user.md)
 <a name="service-errors"></a>
 ## Ошибки отдельных ресурсов
 
@@ -363,7 +363,8 @@ HTTP code | type | value | reason | описание
 ### Работа с резюме
 
 Помимо [общих ошибок](#general-errors) при
-[получении](resumes.md#item)
+[получении](employer_resumes.md#item) резюме могут
+быть возвращены следующие ошибки:
 
 HTTP code | type | value | описание
 ----------|------|-------|---------
@@ -419,7 +420,7 @@ HTTP code | type | value | описание
 ```
 где `allowed_accounts` содержит массив доступных для этого токена аккаунтов
 Элементы массива аналогичны [результату, выдаваемому в списке рабочих аккаунтов](manager_accounts.md#account-info)
-
+<a name="captcha_required"></a>
 ### Необходимость пройти капчу
 
 Некоторые операции в API могут быть защищены капчей.

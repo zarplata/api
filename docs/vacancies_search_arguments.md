@@ -236,7 +236,7 @@
         {
             "argument": "employer_id",
             "value": "1455",
-            "value_description": "zarplata",
+            "value_description": "Зарплата.ру",
             "disable_url": "https://api.zarplata.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
