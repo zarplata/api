@@ -1,9 +1,10 @@
 # Поиск резюме
 
+
 Смотрите также:
 
 * [Просмотр резюме](https://github.com/zarplata/api/blob/master/docs/resumes.md#item)
-  * [Платные услуги для работодателя связанные с резюме](https://github.com/zarplata/api/blob/master/docs/resumes.md#paid-services)
+  * [Платные услуги для работодателя связанные с резюме](https://github.com/zarplata/api/blob/master/docs/employer_resumes.md#paid-services)
 
 <a name="search-params"></a>
 ## Запрос
@@ -139,7 +140,7 @@
 * `page` — номер страницы.
 
 * `professional_role` — профессиональная роль. Элемент справочника
-  [professional_roles](professional_roles.md). Можно указать несколько
+  [professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Spravochniki/paths/~1professional_roles/get). Можно указать несколько
   значений. Замена специализациям (параметр `specialization`)
 
 * `folder` — один или несколько идентификаторов папок с отобранными резюме.
@@ -169,9 +170,9 @@
   фразы в параметре `text` ('программист' или 'java'). При использовании
   дополнительных полей, они должны быть указаны все.
 
-* `GET /resumes?text=zarplata&text.logic=all&text.field=experience&text.period=last_three_years` –
+* `GET /resumes?text=Зарплата.ру&text.logic=all&text.field=experience&text.period=last_three_years` –
   найдет все резюме, в опыте работы которых за последние 3 года встречается
-  'zarplata'.
+  'Зарплата.ру'.
 
 * `GET /resumes?text=менеджер%20проекта&text.logic=all&text.field=experience%2Cskills&text.period=last_year&text=ответственный&text.logic=all&text.field=everywhere&text.period=all_time` –
   найдет все резюме, в опыте работы за последний год и ключевых навыках которых
@@ -264,7 +265,7 @@
                 {
                     "start": "2005-01-01",
                     "end": "2009-03-01",
-                    "company": "zarplata",
+                    "company": "Зарплата.ру",
                     "area": {
                         "id": "1",
                         "name": "Москва",
@@ -284,7 +285,7 @@
                         "logo_urls": {
                             "90": "http://hr.zarplata.ru/employer/logo/1455"
                         },
-                        "name": "zarplata",
+                        "name": "Зарплата.ру",
                         "url": "https://api.zarplata.ru/employers/1455"
                     }
                 }
@@ -325,111 +326,7 @@
 }
 ```
 
-<a name="resume-keys"></a>
-Параметры:
-
-* `last_name` — фамилия;
-* `first_name` — имя;
-* `middle_name` — отчество;
-* `birth_date` — день рождения (ГГГГ-ММ-ДД);
-* `gender` — пол. Элемент справочника [gender](dictionaries.md);
-* `photo` — фотография пользователя. см. [артефакты](artifacts.md);
-* `portfolio` — портфолио пользователя. см. [артефакты](artifacts.md);
-* `area` — город проживания. Элемент справочника [areas](areas.md);
-* `metro` — ближайшая станция метро. Элемент справочника [metro](metro.md). Если передать метро не принадлежащее переданной `area`, поле проигнорируется
-  Имеет смысл указывать только для `area` с метро;
-* `relocation` — возможен ли переезд в другой город. Состоит из полей:
-  * `type` — элемент справочника [relocation_type](dictionaries.md);
-  * `area` — город, в который возможен переезд (список). Имеет смысл
-    только с соответствующим полем `type`. Элемент справочника
-    [areas](areas.md);
-* `business_trip_readiness` — готовность к командировкам. Элемент справочника
-  [business_trip_readiness](dictionaries.md#business_trip_readiness)
-* `contact` — контактная информация (список).
-  Про обязательность полей и данных смотрите в [условиях заполнения контактов](#conditions-contacts).
-  Состоит из полей:
-  * `type` — элемент справочника [preferred_contact_type](dictionaries.md)
-  * `value` — значение контакта. Для телефона состоит из четырех полей (`country `, `city`, `number`, `formatted`),
-    для электронного адреса — строка.
-  * `preferred` — предпочитаемый вид связи (`true` или `false`);
-  * `comment` — комментарий к контакту;
-* `site` — присутствие на других сайтах. Состоит из полей:
-  * `type` — тип сайта. Элемент справочника
-    [resume_contacts_site_type](dictionaries.md);
-  * `url` — ссылка на профиль, либо идентификатор на стороннем сайте/сервисе;
-* `title` — желаемая должность;
-* `specialization` — специализация соискателя (список). Элемент справочника
-  [specializations](specializations.md);
-* `professional_roles` — профессиональные роли соискателя (список). Элемент справочника
-  [professional_roles](professional_roles.md);
-* `salary` — желаемая зарплата. Состоит из полей:
-  * `amount` — сумма;
-  * `currency` — идентификатор [валюты](dictionaries.md);
-* `employments` — занятость. Элементы справочника [employment](dictionaries.md)
-* `schedules` — график работы. Список из элементов справочника [schedule](dictionaries.md)
-* `education` — образование. Состоит из полей:
-  * `elementary` — среднее образование (список). Обычно заполняется только
-    при отсутствии высшего образования. Состоит из полей:
-    * `year` — год окончания;
-    * `name` — название учебного заведения;
-  * `additional` — курсы повышения квалификации (список). Состоит из полей:
-    * `organization` — организация, проводившая курс;
-    * `name` — название курса;
-    * `result` — специальность / специализация;
-    * `year` — год окончания;
-  * `attestation` — тесты, экзамены (список):
-    * `organization` — организация, проводившая тест или экзамен;
-    * `name` — название тест или экзамена;
-    * `result` — специальность / специализация;
-    * `year` — год сдачи;
-  * `primary` — образование выше среднего (список). Состоит из полей:
-    * `name` — название учебного заведения;
-    * `name_id` — идентификатор учебного заведения, можно получить из
-      [подсказок по названиям вузов](suggests.md#universities);
-    * `organization` — факультет;
-    * `organization_id` — идентификатор факультета, можно получить из
-      [справочника факультетов](faculties.md);
-    * `result` — специальность / специализация;
-    * `result_id` — идентификатор специальности / специализации, можно
-      получить из
-      [подсказок по специализациям](suggests.md#specializations);
-    * `year` — год окончания;
-  * `level` — уровень образования. Элемент справочника
-    [education_level](dictionaries.md)
-* `language` — владение языками (список).
-  * `id` - значение из справочника [languages](languages.md)
-  * `level` - значение из справочника [language_level](dictionaries.md)
-* `experience` — опыт работы (список). Состоит из полей:
-  * `company` — организация;
-  * `company_id` — идентификатор организации, можно получить из
-    [подсказок по организациям](suggests.md#companies);
-  * `area` — регион расположения организации. Элемента справочника
-    [areas](areas.md);
-  * `company_url` — сайт компании;
-  * `industries` — отрасли компании. Элемент справочника
-    [/industries](industries.md)
-  * `position` — должность;
-  * `start` — начало работы (ГГГГ-ММ-ДД);
-  * `end` — окончание работы (ГГГГ-ММ-ДД);
-  * `description` — обязанности, функции, достижения;
-* `skills` — дополнительная информация, описание навыков в свободной форме;
-* `skill_set` — ключевые навыки (список уникальных строк).
-* `citizenship` — гражданство (список). Элемента справочника [areas](areas.md);
-* `work_ticket` — разрешение на работу (список). Элемента справочника
-  [areas](areas.md);
-* `travel_time` — желательное время в пути до работы. Элемент справочника
-  [travel_time](dictionaries.md);
-* `recommendation` — рекомендации (список). Состоит из полей:
-  * `name` — имя;
-  * `position` — должность;
-  * `organization` — организация;
-* `resume_locale` — локаль резюме. Элемент справочника [локали резюме](locales.md).
-* `driver_license_types` - cписок категорий водительских прав соискателя. Элемент справочника [тип водительских прав](dictionaries.md).
-* `has_vehicle` - наличие личного автомобиля у соискателя
-* `hidden_fields` - [скрытые поля](#hidden-fields) в резюме (список). Элемент справочника [resume_hidden_fields](dictionaries.md).
-* `access` - [видимость резюме](#access_type)
-  * `type` - тип видимости. Элемент справочника [resume_access_type](dictionaries.md)
-
+Поля резюме аналогичны [полям при редактировании резюме](https://github.com/zarplata/api/blob/master/docs/resumes.md#resume-keys).
 
 Контактная информация (ФИО) будет присутствовать только после [открытия контактой информации в резюме](/docs/payable/resume.md)
 
