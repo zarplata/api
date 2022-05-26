@@ -91,7 +91,6 @@
   * [Список архивных вакансий](docs/employer_vacancies.md#archived) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
   * [Удаление вакансий](docs/employer_vacancies.md#hide) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
   * [Список удаленных вакансий](docs/employer_vacancies.md#hidden) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
-* [Список улучшений для вакансии](docs/employer_vacancy_upgrades.md) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
 * [Статистика по вакансии](docs/employer_vacancies.md#stats) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
 * [Черновики вакансий](docs/vacancy_drafts.md) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
   * [Получение списка черновиков](docs/vacancy_drafts.md#draft_list) <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
