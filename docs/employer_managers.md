@@ -16,7 +16,7 @@
 > ‼️ Внимание! Значения в справочниках могут поменяться в любой момент. Не нужно завязываться на них.
 
 ### Запрос
-> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Rabotodatelskie/paths/~1employers~1{employer_id}~1manager_types/get)
+> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Menedzhery-rabotodatelya/paths/~1employers~1{employer_id}~1manager_types/get)
 
 <a name="add"></a>
 ## Добавление менеджера
@@ -25,7 +25,7 @@
 `POST /employers/{employer_id}/managers`
 
 где `employer_id` - идентификатор работодателя, который можно узнать в
-  [информации о текущем пользователе](me.md#employer-info).
+  [информации о текущем пользователе](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-menedzhere/paths/~1me/get).
 
 В теле запроса передается json вида:
 
@@ -127,61 +127,7 @@
 
 <a name="edit"></a>
 ## Редактирование менеджера
-
-### Запрос
-`PUT /employers/{employer_id}/managers/{manager_id}`
-
-где:
-
-* `employer_id` - идентификатор работодателя, который можно узнать в
-  [информации о текущем пользователе](me.md#employer-info).
-* `manager_id` - идентификатор менеджера.
-
-В теле запроса передается json вида:
-
-```json
-{
-    "position": "Менеджер по подбору персонала",
-    "phone": {
-        "country": "7",
-        "city": "495",
-        "number": "1568055",
-        "comment": "с 9 до 17"
-    },
-    "additional_phone": {
-         "country": "7",
-         "city": "916",
-         "number": "4555555",
-         "comment": "личный"
-    },
-    "permissions": [
-       {
-           "id": "can_create_vacancy",
-           "name": "Создание и продление вакансий"
-       },
-       {
-           "id": "can_view_resume_contacts",
-           "name": "Просмотр контактов соискателей"
-       }
-   ]
-}
-```
-
-Изменять можно только поля, из приведенного json-примера. Описание полей можно посмотреть в [запросе на создание](#add).
-При обновлении можно передавать как все поля, так и часть полей, которые необходимо обновить.
-
-### Ответ
-
-В случае успешного выполнения запроса будет возвращён статус `200 OK`.
-
-### Ошибки
-
-* `404 Not Found` – указанный работодатель или менеджер не существует, или пользователь не имеет прав на изменение менеджера
-* `400 Bad Request` – параметры во входном json переданы с ошибкой. Будет возвращено описание ошибки в теле.
-Неизвестные параметры и параметры с ошибкой в названии игнорируются.
-* `403 Forbidden`– неподходящая авторизация или другие причины отказа отредактировать менеджера
-Дополнительно к HTTP коду сервер может вернуть
-описание [причины ошибки](errors.md#employer_managers).
+> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Menedzhery-rabotodatelya/paths/~1employers~1%7Bemployer_id%7D~1managers~1%7Bmanager_id%7D/put)
 
 <a name="delete"></a>
 ## Удаление менеджера
@@ -197,7 +143,7 @@
 где:
 
 * `employer_id` - идентификатор работодателя, который можно узнать в
-  [информации о текущем пользователе](me.md#employer-info).
+  [информации о текущем пользователе](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-menedzhere/paths/~1me/get).
 * `manager_id` - идентификатор менеджера.
 
 На вход в качестве обязательного параметра необходимо передавать:
@@ -220,7 +166,7 @@
 <a name="list"></a>
 ## Справочник менеджеров работодателя
 
-> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Spravochniki/paths/~1employers~1{employer_id}~1managers/get)
+> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Menedzhery-rabotodatelya/paths/~1employers~1{employer_id}~1managers/get)
 
 <a name="item"></a>
 ## Получение информации о менеджере
@@ -232,7 +178,7 @@
 где:
 
 * `employer_id` - идентификатор работодателя, который можно узнать в
-  [информации о текущем пользователе](me.md#employer-info).
+  [информации о текущем пользователе](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-menedzhere/paths/~1me/get).
 * `manager_id` - идентификатор менеджера.
 
 ### Ответ

@@ -487,14 +487,14 @@ HTTP code | type | value | описание
 Возможно указание нескольких значений.  
 
 * `metro` — ветка или станция метро.  
-Необходимо передавать `id` из справочника [/metro](metro.md).    
+Необходимо передавать `id` из справочника [/metro](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1metro/get).    
 Возможно указание нескольких значений.  
 
 * `specialization` — профобласть или специализация. 
 Необходимо передавать `id` из справочника [/specializations](specializations.md).    
 Возможно указание нескольких значений. Будет заменен профессиональными ролями (параметр `professional_role`), в настоящее время работает в режиме обратной совместимости.
   
-* `professional_role` - профессиональная область. Необходимо передавать `id` из справочника [/professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Spravochniki/paths/~1professional_roles/get)
+* `professional_role` - профессиональная область. Необходимо передавать `id` из справочника [/professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1professional_roles/get)
 
 * `industry` - индустрия компании, разместившей вакансию. 
 Необходимо передавать `id` из справочника [/industries](industries.md).
@@ -581,7 +581,7 @@ HTTP code | type | value | описание
    Возможно указание нескольких значений.  
   
 * `professional_role` — профессиональная роль. Необходимо передавать `id` из справочника
-  [professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Spravochniki/paths/~1professional_roles/get).
+  [professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1professional_roles/get).
   Возможно указание нескольких значений. Замена специализациям (параметр `specialization`)
 
 <a name="search-results"></a>
