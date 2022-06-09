@@ -41,7 +41,7 @@ API поддерживает следующие уровни авторизац�
 
 * [для авторизованного приложения](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-prilozhenii/paths/~1me/get)
 * [для авторизованного менеджера работодателя](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-menedzhere/paths/~1me/get)
-* [для авторизованного соискателя](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-soiskatele/paths/~1me/get)
+* 
 
 <a name="links"></a>
 ## Полезные ссылки
