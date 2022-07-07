@@ -309,7 +309,7 @@ response_notifications | boolean или null | уведомлять о новы�
 <a name="allow_messages"></a> allow_messages | boolean или null | возможность [переписки с кандидатами](employer_negotiations.md) по данной вакансии
 response_letter_required | boolean или null | требовать сопроводительное письмо
 accept_handicapped | boolean или null | указание, что вакансия доступна для соискателей с инвалидностью
-accept_kids | boolean или null | указание, что вакансия доступна для соискателей от 14 лет [подробнее](employer_vacancies_accept_kids.md#accept-kids)
+
 branded_template.id | string или null | <a name="branded-template-field"></a> брендированное оформление вакансии из [справочника](employer_vacancy_branded_templates.md#list)
 driver_license_types | array или null | список требуемых категорий водительских прав
 driver_license_types[].id | string | категория водительских прав. элемент справочника [driver_license_types](dictionaries.md)
