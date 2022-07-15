@@ -243,7 +243,6 @@ schedule | object | График работы. Элемент справочни
 schedule.id | string | Идентификатор графика работы
 schedule.name | string | Название графика работы
 accept_handicapped | boolean | Указание, что вакансия доступна для соискателей с инвалидностью
-
 experience | object | Требуемый опыт работы. Элемент справочника [experience](dictionaries.md)
 experience.id | string | Идентификатор требуемого опыта работы
 experience.name | string | Название требуемого опыта работы
