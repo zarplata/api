@@ -410,7 +410,7 @@ can_upgrade_billing_type | логический | Можно ли улучшит
 В объекте `manager` — информация о менеджере, который разместил данную вакансию.
 
 В объекте `branded_template` — информация об используемом в вакансии
-[брендированном шаблоне](employer_vacancy_branded_templates.md).
+[брендированном шаблоне](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-rabotodatele/paths/~1employers~1%7Bemployer_id%7D~1vacancy_branded_templates/get).
 
 Также для автора вакансии в объекте `test` доступен ключ `id`, а в объекте
 `address` доступны:
