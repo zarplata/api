@@ -293,7 +293,7 @@ salary.to | numeric или null | верхняя граница зарплаты
 salary.gross | boolean | признак что границы зарплаты указаны до вычета налогов
 salary.currency | string | код валюты из [справочника currency](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1dictionaries/get)
 address | object или null | адрес
-address.id | string | адрес из [списка доступных адресов работодателя](employer_addresses.md)
+address.id | string | адрес из [списка доступных адресов работодателя](https://api.zarplata.ru/openapi/redoc#tag/Adresa-rabotodatelya)
 address.show_metro_only | boolean | показывать только метро для указанного адреса
 experience.id | string или null | требуемый опыт работы из [справочника experience](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1dictionaries/get)
 schedule.id | string или null | график работы из [справочника schedule](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1dictionaries/get)
