@@ -510,8 +510,6 @@ HTTP code | type | value | описание
 * `specialization` — профобласть или специализация. 
 Необходимо передавать `id` из справочника [/specializations](specializations.md).    
 Возможно указание нескольких значений. Будет заменен профессиональными ролями (параметр `professional_role`), в настоящее время работает в режиме обратной совместимости.
-  
-* `professional_role` - профессиональная область. Необходимо передавать `id` из справочника [/professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1professional_roles/get)
 
 * `industry` - индустрия компании, разместившей вакансию. 
 Необходимо передавать `id` из справочника [/industries](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1industries/get).
