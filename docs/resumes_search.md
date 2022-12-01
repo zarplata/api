@@ -103,10 +103,6 @@
   `schedule` в [/dictionaries](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1dictionaries/get). Можно указать несколько
   значений.
 
-* `specialization` — профобласть или специализация. Справочник с возможными
-  значениями: [/specializations](https://github.com/zarplata/api/blob/master/docs/specializations.md). Можно указать несколько
-  значений. Будет заменен профессиональными ролями (параметр `professional_role`), в настоящее время работает в режиме обратной совместимости.
-
 * `order_by` — сортировка списка резюме. Справочник с возможными значениями:
   `resume_search_order` в [/dictionaries](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1dictionaries/get).
 
@@ -141,7 +137,7 @@
 
 * `professional_role` — профессиональная роль. Элемент справочника
   [professional_roles](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/paths/~1professional_roles/get). Можно указать несколько
-  значений. Замена специализациям (параметр `specialization`)
+  значений.
 
 * `folder` — один или несколько идентификаторов папок с отобранными резюме.
 Если данный параметр передан, поиск будет ограничен содержимым указанных папок.
