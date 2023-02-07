@@ -39,8 +39,8 @@ API поддерживает следующие уровни авторизац�
 
 Для тестирования токена удобно использовать метод `/me`:
 
-* [для авторизованного приложения](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-prilozhenii/paths/~1me/get)
-* [для авторизованного менеджера работодателя](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-menedzhere/paths/~1me/get)
+* [для авторизованного приложения](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-prilozhenii/operation/get-current-user-info)
+* [для авторизованного менеджера работодателя](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-menedzhere/operation/get-current-user-info)
 * 
 
 <a name="links"></a>
