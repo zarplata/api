@@ -80,6 +80,7 @@ working_time_modes | режимы времени работы
 accept_temporary | указание, что вакансия доступна для соискателей с временным трудоустройством
 branded_template.id | <a name="branded-template-field"></a> брендированное оформление вакансии из [справочника](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-rabotodatele/operation/get-vacancy-branded-templates-list)
 languages | список языков
+driver_license_types | категория водительских прав. Элемент справочника [driver_license_types](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/operation/get-dictionaries)
 
 Остальные поля доступны только для чтения, либо их можно задать только при создании вакансии.
 
