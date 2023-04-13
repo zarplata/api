@@ -3,8 +3,8 @@
 
 Смотрите также:
 
-* [Просмотр резюме](https://github.com/zarplata/api/blob/master/docs/resumes.md#item)
-  * [Платные услуги для работодателя связанные с резюме](https://github.com/zarplata/api/blob/master/docs/employer_resumes.md#paid-services)
+* [Просмотр резюме](https://github.com/zarplata/api/blob/main/docs/employer_resumes.md#item)
+  * [Платные услуги для работодателя связанные с резюме](https://github.com/zarplata/api/blob/main/docs/employer_resumes.md#paid-services)
 
 <a name="search-params"></a>
 ## Запрос
@@ -39,7 +39,7 @@
 
 * `age_from`, `age_to` — возраст соискателя в годах, диапазон от и до. Обратите внимание, по умолчанию в выдачу добавляются так же резюме с неуказанным возрастом, для выдачи резюме только с указанным возрастом используйте специальный [label](#resume_search_label) "only_with_age"
 
-* `area` — регион. Справочник с возможными значениями: [/areas](https://github.com/zarplata/api/blob/master/docs/areas.md).
+* `area` — регион. Справочник с возможными значениями: [/areas](https://github.com/zarplata/api/blob/main/docs/areas.md).
   Можно указать несколько значений. По умолчанию выбираются
   резюме, в которых соискатели живут в указанных регионах или готовы в них
   переехать, поменять это поведение можно указанием поля `relocation`.
@@ -52,11 +52,11 @@
   Если не указан, поиск ведется без ограничений по дате публикации.
 
 * `date_from` – дата, от которой нужно начать поиск. Значение указывается в формате
-  [ISO 8601](https://github.com/zarplata/api/blob/master/docs/general.md#date-format) -
+  [ISO 8601](https://github.com/zarplata/api/blob/main/docs/general.md#date-format) -
   `YYYY-MM-DD` или с точность до секунды `YYYY-MM-DDThh:mm:ss±hhmm`. Нельзя передавать вместе с параметром `period`.
 
 * `date_to` – дата, до которой нужно искать. Значение указывается в формате
-  [ISO 8601](https://github.com/zarplata/api/blob/master/docs/general.md#date-format) -
+  [ISO 8601](https://github.com/zarplata/api/blob/main/docs/general.md#date-format) -
   `YYYY-MM-DD` или с точность до секунды `YYYY-MM-DDThh:mm:ss±hhmm`. Можно передавать только в паре
   с параметром `date_from`. Нельзя передавать вместе с параметром `period`.
 
@@ -73,7 +73,7 @@
 
 * `skill` - ключевые навыки. Указывается один или несколько идентификаторов
   ключевых навыков. Значения можно получить из поля `id` в
-  [подсказке по ключевым навыкам](https://github.com/zarplata/api/blob/master/docs/suggests.md#key-skills).
+  [подсказке по ключевым навыкам](https://github.com/zarplata/api/blob/main/docs/suggests.md#key-skills).
 
 * `gender` — пол. Справочник с возможными значениями: `gender` в
   [/dictionaries](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/operation/get-dictionaries). По умолчанию вне зависимости от значения
@@ -115,7 +115,7 @@
 
 * `educational_institution` – учебные заведения соискателя. В качестве
   параметров используются подсказки по названиям университетов
-  [/suggests/educational_institutions](https://github.com/zarplata/api/blob/master/docs/suggests.md). Возможно указание
+  [/suggests/educational_institutions](https://github.com/zarplata/api/blob/main/docs/suggests.md). Возможно указание
   нескольких значений.
 
 * `search_in_responses` — `true`: искать только по резюме, которыми соискатели
@@ -333,11 +333,11 @@
 }
 ```
 
-Поля резюме аналогичны [полям при редактировании резюме](https://github.com/zarplata/api/blob/master/docs/resumes.md#resume-keys).
+Поля резюме аналогичны [полям при редактировании резюме](https://github.com/zarplata/api/blob/main/docs/resumes.md#resume-keys).
 
 Контактная информация (ФИО) будет присутствовать только после [открытия контактой информации в резюме](/docs/payable/resume.md)
 
-Для получения полной информации необходимо запросить [полное резюме](https://github.com/zarplata/api/blob/master/docs/resumes.md#item).
+Для получения полной информации необходимо запросить [полное резюме](https://github.com/zarplata/api/blob/main/docs/employer_resumes.md#item).
 У соискателя запрос резюме будет отражён в истории просмотров.
 
 Настройки вывода полей в поиске резюме на сайте не влияют на выдачу в API.
