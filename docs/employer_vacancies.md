@@ -180,7 +180,7 @@ PUT /vacancies/{vacancy_id}
 <a name="archived"></a>
 ## Список архивных вакансий
 
-> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-hidden-vacancies)
+> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-archived-vacancies)
 
 <a name="hide"></a>
 ## Удаление вакансий
