@@ -5,7 +5,7 @@
 * [Условия заполнения полей при добавлении и редактировании вакансий](#conditions)
 * [Редактирование вакансий](#edit)
 * [Продление вакансий](#prolongate)
-* [Информация о возможности продления вакансии](#prolongate-info)
+* [Информация о возможности продления вакансии](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-prolongation-vacancy-info)
 * [Список опубликованных вакансий](#active)
 * [Архивация вакансий](#archive)
 * [Список архивных вакансий](#archived)
@@ -81,6 +81,7 @@ accept_temporary | указание, что вакансия доступна д
 branded_template.id | <a name="branded-template-field"></a> брендированное оформление вакансии из [справочника](https://api.zarplata.ru/openapi/redoc#tag/Informaciya-o-rabotodatele/operation/get-vacancy-branded-templates-list)
 languages | список языков
 driver_license_types | категория водительских прав. Элемент справочника [driver_license_types](https://api.zarplata.ru/openapi/redoc#tag/Obshie-spravochniki/operation/get-dictionaries)
+video_vacancy | данные по видеовакансии, включающие ссылку для скачивания видео
 
 Остальные поля доступны только для чтения, либо их можно задать только при создании вакансии.
 

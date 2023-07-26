@@ -122,11 +122,14 @@
     "employment": {
       "id": "full",
       "name": "Полная занятость"
+    },
+    "video_vacancy": {
+      "video_url": "https://host/video/123"
     }
 }
 ```
 
-Описание полей смотрите в [выдаче полной вакансии](#vacancy-fields).
+Описание полей смотрите в [выдаче полной вакансии](https://api.zarplata.ru/openapi/redoc#tag/Vakansii/operation/get-vacancy).
 
 `url` и `alternate_url` могут принимать значение `null` в случае, если подробная
 информация о вакансии недоступна (например, вакансия была удалена).

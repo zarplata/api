@@ -4,7 +4,7 @@
 Смотрите также:
 
 * [Просмотр резюме](https://github.com/zarplata/api/blob/main/docs/employer_resumes.md#item)
-  * [Платные услуги для работодателя связанные с резюме](https://github.com/zarplata/api/blob/main/docs/employer_resumes.md#paid-services)
+  * [Платные услуги для работодателя связанные с резюме (поле paid_services)](https://api.zarplata.ru/openapi/redoc#tag/Prosmotr-rezyume/operation/get-resume)
 
 <a name="search-params"></a>
 ## Запрос
@@ -350,7 +350,7 @@
 (поле `description`), а также должность (поле `position`) доступна только в
 последнем опыте. Образование выводится только основное.
 
-Поле `job_search_status` [статус поиска работы](employer_resumes.md#job-search-status-object) можно получить, используя параметр `with_job_search_status=true`.
+Поле `job_search_status` [статус поиска работы](https://api.zarplata.ru/openapi/redoc#tag/Prosmotr-rezyume/operation/get-resume) можно получить, используя параметр `with_job_search_status=true`.
 
 Дополнительно работодателю выдаются следующие поля:
 * `owner.comments.url` — содержит url, GET запрос на который возвращает
