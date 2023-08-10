@@ -106,8 +106,8 @@
 <a name="employers"></a>
 ### Работодатели/компании
 
-* [Поиск компаний](https://api.zarplata.ru/openapi/redoc#tag/Rabotodatel/paths/~1employers/get) <img alt="anonymous" src="http://zarplata.github.io/api/badges/anon.png"/> <img alt="client" src="http://zarplata.github.io/api/badges/client.png"/> <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
-* [Получение информации о компании](https://api.zarplata.ru/openapi/redoc#tag/Rabotodatel/paths/~1employers~1%7Bemployer_id%7D/get) <img alt="anonymous" src="http://zarplata.github.io/api/badges/anon.png"/> <img alt="client" src="http://zarplata.github.io/api/badges/client.png"/> <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
+* [Поиск компаний](https://api.zarplata.ru/openapi/redoc#tag/Rabotodatel/paths/~1employers/get) <img alt="client" src="http://zarplata.github.io/api/badges/client.png"/> <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
+* [Получение информации о компании](https://api.zarplata.ru/openapi/redoc#tag/Rabotodatel/paths/~1employers~1%7Bemployer_id%7D/get) <img alt="client" src="http://zarplata.github.io/api/badges/client.png"/> <img alt="employer" src="http://zarplata.github.io/api/badges/emp.png"/>
 
 <a name="employer_managers"></a>
 ### Менеджеры работодателя
