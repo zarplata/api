@@ -203,7 +203,7 @@ actions.free_renewal_url | string или null| Урл для продления 
 <a name="active"></a>
 ## Список опубликованных вакансий
 
-> > !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Vakansii/operation/get-active-vacancy-list)
+> > !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-active-vacancy-list)
 
 <a name="archive"></a>
 ## Архивация вакансий
@@ -238,4 +238,4 @@ actions.free_renewal_url | string или null| Урл для продления 
 <a name="visitors"></a>
 ## Просмотры вакансии
 
-> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Vakansii/operation/get-vacancy-visitors)
+> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-vacancy-visitors)
