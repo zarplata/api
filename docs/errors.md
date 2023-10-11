@@ -379,7 +379,7 @@ HTTP code | type | value | reason | описание
 ### Работа с резюме
 
 Помимо [общих ошибок](#general-errors) при
-[получении](employer_resumes.md#item) резюме могут
+[получении](employer_resumes.md#item) и [обновлении](resumes.md#edit) резюме могут
 быть возвращены следующие ошибки:
 
 HTTP code | type | value | описание
