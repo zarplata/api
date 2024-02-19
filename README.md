@@ -147,7 +147,7 @@
   * [Действия по отклику/приглашению (смена состояния)](docs/employer_negotiations.md#actions) <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
   * [Отметить отклики прочитанными](https://api.zarplata.ru/openapi/redoc#tag/Otklikipriglasheniya-rabotodatelya/operation/post-negotiations-topics-read) <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
   * [Статистика по работе с откликами](docs/employer_negotiations_statistics.md) <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
-  * [Тексты сообщений](https://api.zarplata.ru/openapi/redoc#tag/Otklikipriglasheniya-rabotodatelya/operation/get-mail-templates) <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
+  * [Тексты сообщений](docs/negotiation_message_templates.md) <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
   * [Изменение шаблона ответа соискателю](https://api.zarplata.ru/openapi/redoc#tag/Otklikipriglasheniya-rabotodatelya/operation/put-mail-templates-item) <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
 * [Инструменты оценки](docs/assessment.md)  <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" />
 
