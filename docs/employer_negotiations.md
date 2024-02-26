@@ -1110,7 +1110,7 @@ Location: /negotiations/321
 <a name="discard"></a>
 ## Действия по отклику/приглашению 
 
-> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Otklikipriglasheniya-rabotodatelya/operation/put-pref-negotiations-order)
+> !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Otklikipriglasheniya-rabotodatelya/operation/put-negotiations-collection-to-next-state)
 
 
 <a name="get-preference-order"></a>
