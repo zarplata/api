@@ -1,6 +1,6 @@
 # Тексты сообщений
 
-> <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" /> : Метод требует наличия [платного доступа для работодателя](/docs/payable/employer_methods.md)
+> <img src="http://zarplata.github.io/api/badges/emp.png" alt="employer" /> : Метод требует наличия [платного доступа для работодателя](https://api.zarplata.ru/openapi/redoc#tag/Uslugi-rabotodatelya/operation/get-payable-api-method-access)
 
 Работодателю доступны для получения тексты, формируемые по шаблонам, для
 использования в отправляемых соискателю приглашениях на вакансию или
