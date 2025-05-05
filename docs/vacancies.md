@@ -22,7 +22,7 @@
 * [Вакансии для работодателя](employer_vacancies.md)
   * [Публикация вакансий](employer_vacancies.md#creation)
   * [Редактирование вакансий](employer_vacancies.md#edit)
-  * [Продление вакансий](employer_vacancies.md#prolongate)
+  * [Поднятие вакансий](employer_vacancies.md#prolongate)
   * [Удаление вакансий](employer_vacancies.md#hide)
 
 

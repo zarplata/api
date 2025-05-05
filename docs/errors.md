@@ -10,7 +10,7 @@
 * [Сохраненные поиски резюме](#resumes-saved-searches)
 * [Переписка (отклики/приглашения)](#negotiations)
 * [Публикация и редактирование вакансий](#vacancies-create-n-edit)
-* [Продление вакансии](#vacancies-prolongate)
+* [Поднятие вакансии](#vacancies-prolongate)
 * [Менеджеры работодателя](#employer_managers)
 * [Работа с резюме](#resumes)
 * [Рабочие аккаунты менеджера](#manager-accounts)
@@ -348,18 +348,18 @@ items | array | Ограниченное количество записей с 
 items[].id | number | Идентификатор вакансии
 
 <a name="vacancies-prolongate"></a>
-### Продление вакансии
+### Поднятие вакансии
 
-Помимо кода ошибки при [продлении](employer_vacancies.md#prolongate) вакансии могут быть
+Помимо кода ошибки при [поднятии](employer_vacancies.md#prolongate) вакансии могут быть
 возвращены следующие ошибки:
 
 HTTP code | type | value | описание
 ----------|------|-------|---------
-403 | vacancies | not_enough_purchased_services | купленных услуг для продления данного типа вакансии не достаточно
+403 | vacancies | not_enough_purchased_services | купленных услуг для поднятия данного типа вакансии не достаточно
 403 | vacancies | quota_exceeded | квота менеджера на публикацию данного типа вакансии закончилась
-403 | vacancies | prolongation_forbidden | продление вакансий недоступно текущему менеджеру
-403 | vacancies | unavailable_for_archived | продление недоступно для архивной вакансии
-403 | vacancies | too_early | продление раньше времени
+403 | vacancies | prolongation_forbidden | поднятие вакансий недоступно текущему менеджеру
+403 | vacancies | unavailable_for_archived | поднятие недоступно для архивной вакансии
+403 | vacancies | too_early | поднятие раньше времени
 
 
 <a name="employer_managers"></a>

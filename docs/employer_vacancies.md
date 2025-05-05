@@ -4,8 +4,8 @@
 * [Публикация вакансий](#creation)
 * [Условия заполнения полей при добавлении и редактировании вакансий](#conditions)
 * [Редактирование вакансий](#edit)
-* [Продление вакансий](#prolongate)
-* [Информация о возможности продления вакансии](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-prolongation-vacancy-info)
+* [Поднятие вакансий](#prolongate)
+* [Информация о возможности поднятия вакансии](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-prolongation-vacancy-info)
 * [Список опубликованных вакансий](#active)
 * [Архивация вакансий](#archive)
 * [Список архивных вакансий](#archived)
@@ -49,10 +49,10 @@
 
 
 <a name="prolongate"></a>
-## Продление вакансий
+## Поднятие вакансий
 > > !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/vacancy-prolongation)
 
-## Информация о возможности продления вакансии
+## Информация о возможности поднятия вакансии
 > > !! Данный метод доступен в [OpenAPI](https://api.zarplata.ru/openapi/redoc#tag/Upravlenie-vakansiyami/operation/get-prolongation-vacancy-info)
 
 <a name="active"></a>
