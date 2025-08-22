@@ -27,7 +27,7 @@
 <a name="content"></a>
 ## Содержание
 
-Пометки в документации:
+Пометки к документации:
 
 * <img src="http://zarplata.github.io/api/badges/anon.png" alt="anonymous" /> –
   актуально для анонимных запросов, не требует авторизации.
